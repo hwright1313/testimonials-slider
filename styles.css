@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+body {
+    margin: 15px 30px 0px 30px;
+    overflow: hidden;
+}
+
+/* ----------- STATIC BACKGROUND ----------- */
+
+.pattern-bg {
+    position: fixed;
+    z-index: -2;
+    right: 30px;
+}
+
+.curve-bg {
+    position: fixed;
+    z-index: -2;
+    left: 0;
+    bottom: 0;
+}
+
+.quote-bg {
+    position: fixed;
+    z-index: -2;
+    left: 300px;
+    top: 180px;
+}
+
+.attribution {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+/* ----------- QUOTE ----------- */
+
+.headshot {
+    margin: 70px 140px 110px -80px;
+    height: auto;
+    float: right;
+    box-shadow: 5px 20px 15px hsla(240, 18%, 77%, .5);
+}
+
+.quote {
+    font-family: 'Inter', sans-serif; 
+    padding: 200px 0 0 170px;
+    z-index: 10;
+}
+
+.quote-body {
+   font-weight: 300;
+    font-size: 32px;
+    color: hsl(240, 38%, 20%);
+    margin-bottom: 25px;
+}
+
+.quote-name {
+    font-weight: 700;
+    font-size: 18px;
+    color: hsl(240, 38%, 20%);
+    float: left;
+    margin-right: 10px;
+}
+
+.quote-tag {
+    font-weight: 500;
+    font-size: 18px;
+    color: hsl(240, 18%, 77%);
+    display: inline-block;
+}
+
+/* ----------- ARROW BUTTONS ----------- */
+
+.btn {
+    position: fixed;
+    background: lightgrey;
+    color: black;
+    border-radius: 50%;
+    padding: 20px;
+    bottom: 100px;
+    right: 300px;
+}
+
+.previous {
+    right: 350px;
+}
