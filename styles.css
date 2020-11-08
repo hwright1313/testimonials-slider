@@ -39,6 +39,8 @@ body {
     margin: 70px 140px 110px -80px;
     height: auto;
     float: right;
+    width: 100%;
+    max-width: 540px;
     box-shadow: 5px 20px 15px hsla(240, 18%, 77%, .5);
 }
 
@@ -72,16 +74,35 @@ body {
 
 /* ----------- ARROW BUTTONS ----------- */
 
-.btn {
+#carousel-button-next {
     position: fixed;
-    background: lightgrey;
+    background: white;
     color: black;
     border-radius: 50%;
-    padding: 20px;
+    padding: 15px;
     bottom: 100px;
-    right: 300px;
+    right: 600px;
 }
 
-.previous {
-    right: 350px;
+#carousel-button-prev {
+    position: fixed;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    padding: 15px;
+    bottom: 100px;
+    right: 650px;
+}
+
+
+
+/* ----------- CAROUSEL SLIDER ----------- */
+
+.carousel .carousel-item,
+.carousel .carousel-item--hidden {
+    display: none;
+}
+
+.carousel .carousel-item--visible {
+    display: block;
 }
