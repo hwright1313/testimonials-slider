@@ -24,7 +24,7 @@ body {
     position: fixed;
     z-index: -2;
     left: 300px;
-    top: 180px;
+    top: 130px;
 }
 
 .attribution {
@@ -33,15 +33,40 @@ body {
     bottom: 20px;
 }
 
-/* ----------- QUOTE ----------- */
+@media screen and (max-width: 1140px) {
+    .pattern-bg {
+        width: 90%;
+        height: auto;
+    }
+    
+    .curve-bg {
+        max-width: 80%;
+        height: auto;
+    }
+    
+    .quote-bg {
+        top: 60%;
+        left: 50%;
+        margin-top: -60px; /* Negative half of height. */
+        margin-left: -50px; /* Negative half of width. */
+    }
 
-.headshot {
+    .attribution {
+        position: fixed;
+        text-align: center;
+        right: unset;
+        bottom: 10px;
+    }
+}
+
+/* ----------- TESTIMONIAL SLIDE ----------- */
+
+.headshot img {
     margin: 70px 140px 110px -80px;
-    height: auto;
     float: right;
-    width: 100%;
-    max-width: 540px;
-    box-shadow: 5px 20px 15px hsla(240, 18%, 77%, .5);
+    max-width: 100%;
+    height: auto;
+    /*box-shadow: 5px 20px 15px hsla(240, 18%, 77%, .5);*/
 }
 
 .quote {
@@ -70,6 +95,57 @@ body {
     font-size: 18px;
     color: hsl(240, 18%, 77%);
     display: inline-block;
+}
+
+@media screen and (max-width: 750px) {
+    .headshot img {
+        display: block;
+        padding-top: 25px;
+        margin: 0 auto;
+        float: none;
+        width: 275px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1140px) {
+    .headshot img {
+        display: block;
+        padding-top: 25px;
+        margin: 0 auto;
+        float: none;
+        width: 375px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+
+    .quote {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .quote-body {
+        font-size: 1.2em;
+        width: 85%;
+        text-align: center;
+        padding: 75px 0 15px 0;
+        margin: 0 auto;
+    }
+
+    .quote-name {
+        float: none;
+        text-align: center;
+        margin: 0;
+    }
+
+    .quote-tag {
+        text-align: center;
+        display: block;
+        margin: 0;
+
+    }
 }
 
 /* ----------- ARROW BUTTONS ----------- */
@@ -102,6 +178,21 @@ body {
     border-bottom-right-radius: 40px;
   }
 
+  @media screen and (min-width: 750px) and (max-width: 1140px) {
+    .carousel-buttons {
+        position: absolute;
+        left: 50%;
+        top: 395px;
+      }
+  }
+
+  @media screen and (max-width: 750px) {
+    .carousel-buttons {
+        position: absolute;
+        left: 50%;
+        top: 300px;
+      }
+  }
 
 /* ----------- CAROUSEL SLIDER ----------- */
 
