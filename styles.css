@@ -35,7 +35,10 @@ body {
 
 @media screen and (max-width: 1140px) {
     .pattern-bg {
-        width: 90%;
+        right: unset;
+        left: 50%;
+        margin-left: -237px;
+        max-width: 475px;
         height: auto;
     }
     
@@ -56,6 +59,13 @@ body {
         text-align: center;
         right: unset;
         bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .pattern-bg {
+        margin-left: -187px;
+        max-width: 375px;
     }
 }
 
@@ -153,9 +163,9 @@ body {
 
 .carousel-buttons {
     position: absolute;
-    left: 60%;
+    right: 550px;
     transform: translateX(-50%);
-    bottom: 75px;
+    top: 600px;
     display: flex;
   }
   
